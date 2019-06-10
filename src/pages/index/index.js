@@ -123,9 +123,9 @@ const validate = channelName => {
   if (Validator.maxLength(channelName, 16)) {
     return 'No longer than 16!';
   }
-  if (Validator.validChar(channelName)) {
-    return 'Only capital or lower-case letter, number and "_" are permitted!';
-  }
+  // If (Validator.validChar(channelName)) {
+  //   return 'Only capital or lower-case letter, number and "_" are permitted!';
+  // }
 
   return '';
 };
@@ -133,6 +133,8 @@ const validate = channelName => {
 const subscribeMouseEvent = () => {
   // Click Join and go to the meeting room
   $('#joinBtn').on('click', () => {
+    console.log($('#channel').val());
+    $('#channel').val('ar-core');
     let validateRst = validate(
       $('#channel')
         .val()

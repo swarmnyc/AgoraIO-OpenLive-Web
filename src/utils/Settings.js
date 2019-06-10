@@ -49,4 +49,4 @@ export const RESOLUTION_ARR = {
 
 export const SHARE_ID = 1;
 // eslint-disable-next-line
-export const APP_ID_LIVE = "<#YOUR_APP_ID#>";
+export const APP_ID_LIVE = "8163f36e06524e26bd345697d6a6d97c";
